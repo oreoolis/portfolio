@@ -1,0 +1,122 @@
+.header{
+    padding: 20px;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.headerText h1{
+    font-size: 90px;
+}
+
+.headerText p{
+    font-size: 20px;
+}
+
+.hr{
+    border-width: 3px;
+}
+
+.proj{
+    padding: 50px;
+    display: flex;
+    grid-template-columns: 3fr;
+    grid-gap: 20rem;
+}
+
+.projDesc{
+    color: white;
+    padding: 50px;
+    padding-left: 50px;
+}
+
+.projDesc h1, .projDesc h4{
+    font-family: 'Playfair Display', serif;
+}
+
+.projDesc li{
+    font-family: 'Rubik', sans-serif;;
+}
+
+.projImg{
+    padding: 20px;
+    margin: 0;
+
+}
+
+.mobileImage{
+    height: 100%;
+    width: 75%;
+}
+
+.desktopImage{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* .proj2 .proj3 .proj4 .proj5 .proj6 .proj7{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+} */
+
+/* .proj7{
+    padding-bottom: 10vh;
+} */
+
+/* .projDesc{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 864px) {
+    .proj{
+        display: flex;
+        flex-direction: column-reverse;
+        grid-gap: 1rem;
+        padding: 30px;
+    }
+
+    .projDesc{
+        padding: 10px;
+    }
+
+    .projDesc, .projImg{
+        width: auto
+    }
+
+    .mobileImage{
+        width: 200px;
+        height: 100%;
+    }
+
+    .projDesc h1{
+        font-size: 50px
+    }
+
+    .projDesc h4{
+
+    }
+    
+    .projDesc li{
+        font-family: 'Rubik', sans-serif;;
+    }
+
+}
+

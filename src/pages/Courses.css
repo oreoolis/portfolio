@@ -1,0 +1,53 @@
+.header{
+    width: 100vw;  
+    height: 30vh;  
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hr{
+    border-width: 3px;
+    
+}
+
+.divider{
+    border-color: black;
+}
+
+.h2 h4 h6{
+    font-family: 'Playfair Display', serif;
+}
+
+.headerText{
+    height: 10vh;
+}
+.headerText h1{
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.headerText p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.course1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+li {
+    list-style-type: '👉';
+  
+    padding-inline-start: 1ch;
+}
