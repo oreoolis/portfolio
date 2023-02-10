@@ -55,7 +55,7 @@ class Education extends Component {
                                     <h1>GCE 'O' Levels</h1>
                                     <h4>Serangoon Secondary School</h4>
                                     <h6>January 2015 - November 2018</h6>
-                                    <hr></hr>
+                                    <hr></hr> 
                                     <li><b>L1R4: 13</b></li>
                                     <li><b>L1R5: 15</b></li>
                                     <p>Attained <b>A2 grade</b> for subjects in <b>Computing</b> and <b>History</b>.</p>
