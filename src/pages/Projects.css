@@ -25,12 +25,14 @@
     display: flex;
     grid-template-columns: 3fr;
     grid-gap: 20rem;
+    
 }
 
 .projDesc{
     color: white;
     padding: 50px;
     padding-left: 50px;
+    
 }
 
 .projDesc h1, .projDesc h4{
@@ -50,11 +52,13 @@
 .mobileImage{
     height: 100%;
     width: 75%;
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.5), 0 1px 35px 0 rgba(255, 255, 255, 0.5);
 }
 
 .desktopImage{
     height: 100%;
     width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.9), 0 1px 35px 0 rgba(255, 255, 255, 0.5);
 }
 
 
@@ -108,10 +112,6 @@
 
     .projDesc h1{
         font-size: 50px
-    }
-
-    .projDesc h4{
-
     }
     
     .projDesc li{

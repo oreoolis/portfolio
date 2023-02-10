@@ -40,18 +40,18 @@ export default class NavBar extends Component {
                         Projects
                       </Link>
                     </Nav.Link>
-                    <NavDropdown title="Achievements" id="navbarScrollingDropdown" className="text-white">
                     <Nav.Link>
-                        <Link className="bold text-decoration-none text-dark" to = '/education'>
+                      {' '}
+                        <Link className="bold text-decoration-none text-light" to = '/education'>
                           Education
                         </Link>
                       </Nav.Link>
                       <Nav.Link>
-                        <Link className="text-decoration-none text-dark" to = '/courses'>
+                      {' '}
+                        <Link className="text-decoration-none text-light" to = '/courses'>
                           Courses
                         </Link>
                       </Nav.Link>
-                  </NavDropdown>
                   </Nav>
                 </Navbar.Collapse>
           </Navbar>

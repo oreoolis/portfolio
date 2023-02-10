@@ -3,7 +3,7 @@ import './Courses.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Card } from 'react-bootstrap';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class Courses extends Component {
 
@@ -14,8 +14,8 @@ class Courses extends Component {
     state = {  }    
     render() { 
         return (
-        <div className = "coursePage">
-            <div className = "header">
+        <div className = "coursePage" data-aos="zoom-in-up"  data-aos-duration="500">
+            <div className = "box1">
                 <div data-aos="zoom-in-up"  data-aos-duration="500" className = "headerText">
                     <h1>Courses</h1>
                     <p>Courses that I have attended to further enrich my knowledge.</p>
@@ -23,8 +23,8 @@ class Courses extends Component {
             </div>
             <hr></hr>
             <div className = "course1">
-                <Card className="text-center" data-aos = "flip-up"  data-aos-duration = "500" style = {{width: "80rem", fontFamily: 'Rubik'}}>
-                    <Card.Img variant="top" src="https://cdn.discordapp.com/attachments/636398381664829481/1064786033016836217/IMG_6138.JPG" style={{ objectFit: 'none', height:'30rem', width: "50rem'"}}/>
+                <Card className="text-center" style = {{width: "80rem", fontFamily: 'Rubik'}}>
+                    <Card.Img LazyLoadImage variant="top" src="https://cdn.discordapp.com/attachments/636398381664829481/1064786033016836217/IMG_6138.JPG" style={{ objectFit: 'none', height:'30rem', width: "50rem'"}}/>
                     <Card.Body>
                         <Card.Title><h2>Global Entrepreneurship Internship Program</h2></Card.Title>
                         <Card.Text>

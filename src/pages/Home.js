@@ -19,7 +19,7 @@ class Home extends Component {
     closeModal = () => this.setState({isOpen: false});
     render() { 
         return (
-            <div className = "homePage">
+            <div data-aos="zoom-in" className = "homePage">
                 {/* <div className = "banner">
                     <div className = "heroText"> */}
                         <div className = "bannerText">
