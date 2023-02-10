@@ -46,7 +46,6 @@ class Education extends Component {
                                 </div>
                                 <hr></hr>
                             </div>     
-
                     </div>
 
                     <div data-aos = "fade-right" className = "poly">
