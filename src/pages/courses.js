@@ -24,7 +24,7 @@ class Courses extends Component {
             <hr></hr>
             <div className = "course1">
                 <Card className="text-center" style = {{width: "80rem", fontFamily: 'Rubik'}}>
-                    <Card.Img LazyLoadImage variant="top" src="https://cdn.discordapp.com/attachments/636398381664829481/1064786033016836217/IMG_6138.JPG" style={{ objectFit: 'none', height:'30rem', width: "50rem'"}}/>
+                    <Card.Img LazyLoadImage variant="top" src="https://cdn.discordapp.com/attachments/636398381664829481/1064786033016836217/IMG_6138.JPG?ex=66274e45&is=6614d945&hm=8400c7d9a0b0ca80dfd077e5fdc6b3ec67008cc516ae54ecc7a193d5492c0d33&" style={{ objectFit: 'none', height:'30rem', width: "50rem'"}}/>
                     <Card.Body>
                         <Card.Title><h2>Global Entrepreneurship Internship Program</h2></Card.Title>
                         <Card.Text>
