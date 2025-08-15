@@ -1,0 +1,112 @@
+.aurora-container {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .aurora-container {
+        /* Maintain same properties for tablets */
+        position: fixed; /* Use fixed to ensure it covers viewport */
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .aurora-container {
+        position: fixed;
+        width: 100vw; /* Use viewport units for better mobile support */
+        height: 100vh;
+        min-height: 100vh; /* Ensure full coverage on mobile browsers */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 480px) {
+    .aurora-container {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        /* Handle mobile browser address bar */
+        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .aurora-container {
+        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
+
+/* Landscape Mobile Styles */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    .aurora-container {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        /* Ensure coverage in landscape mode */
+        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
+
+/* Handle viewport changes on mobile */
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    
+    .aurora-container {
+        /* Prevent any potential layout shifts */
+        will-change: auto;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+/* Performance optimizations for mobile */
+@media only screen and (max-width: 480px) {
+    .aurora-container {
+        /* Optimize for mobile performance */
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+}
+
+/* Handle notched devices (iPhone X and newer) */
+@supports (padding: max(0px)) {
+    @media only screen and (max-width: 480px) {
+        .aurora-container {
+            padding-top: env(safe-area-inset-top, 0);
+            padding-bottom: env(safe-area-inset-bottom, 0);
+            padding-left: env(safe-area-inset-left, 0);
+            padding-right: env(safe-area-inset-right, 0);
+        }
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .aurora-container {
+        /* Disable any animations if they exist */
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,41 @@
+.timeline a{
+    text-decoration: none;
+}
+
+.courseDate {
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', serif;
+}
+
+.course-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.course-title{
+    font-family: 'Outfit', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .courseDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .courseDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .courseDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+
+}

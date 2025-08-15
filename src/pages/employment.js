@@ -1,86 +1,58 @@
-import Aos from 'aos';
-import React, { Component } from 'react';
-import './Employment.css' 
-import 'aos/dist/aos.css';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import './css/Employment.css'
 
-class Employment extends Component {
-    
-    componentDidMount(){
-        Aos.init();
-    }
-
-    state = {  } 
-    render() { 
-        return (
-            <div data-aos="zoom-in" data-aos-duration = "500" className = "jobPage">
-                <div className = "box1">
-                    <div className = "box1Text">
-                        <h1 className = "title">Employment History</h1>
-                        <p className = "titleDesc">This page lists down the various companies I have contributed to.</p>
-                        <hr></hr>
-                    </div>     
-                </div>
-
-                <div className = "jobsContainer">
-                    <div data-aos="fade-right" className = "box2">
-                        <div className = "box2Text">
-                            <div className = "jobs">
-                                <h1>AFTERSHOCK PC, Singapore</h1>
-                                <h4>Part-time Retail Salesperson</h4>
-                                <h6>May 2022 - June 2022</h6>
-                                <li> Assisted in the sales of various computer products for customers.</li>
-                                <li> Attended to customers' queries regarding the performance and utility of various computer parts based on their use cases.</li>
-                            </div>
-                            <hr></hr>
-                        </div>     
-                    </div>
-
-
-                    <div data-aos="fade-right" className = "box2">
-                        <div  className = "box2Text">
-                            <div className = "jobs">
-                                <h1>X0PA Ai Pte. Ltd., Singapore</h1>
-                                <h4>Junior Full Stack Web Developer Intern</h4>
-                                <h6>September 2021 - February 2022</h6>
-                                <li> Assisted in the development of various full stack web systems for the company's clients and themselves.</li>
-                                <li> Utilized <b>React.js, MERN stack & Git</b> for development of full stack web systems.</li>
-                                <li> Proactively collaborated with team members within various branches of the team to complete various user interface and functionalities during development.</li>
-                            </div>
-                            <hr></hr>     
-
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-right" className = "box2">
-                        <div  className = "box2Text">
-                            <div className = "jobs">
-                                <h1>High End Communications Pte. Ltd., Singapore</h1>
-                                <h4>Part-time Video Recording Engineer</h4>
-                                <h6>December 2020 - December 2020</h6>
-                                <li> Assisted in recording old video tapes into modern format & perform quality checks on recorded video.</li>
-                            </div>
-                            <hr></hr>
-                        </div>    
-                    </div>
-
-                    <div data-aos="fade-right" className = "box2">
-                        <div  className = "box2Text">
-                            <div className = "jobs">
-                                <h1>COMEX, Singapore</h1>
-                                <h4>Part-time Computer Promoter</h4>
-                                <h6>September 2019 - September 2019</h6>
-                                <li> Promoted the sale of various laptop models and assisted customers' queries regarding various computer specifications.</li>
-                            </div>
-                            <hr></hr>
-                        </div>     
-                    </div>
-                </div>
-
-                
-
-            </div>
-        );
-    }
+const Employment = () => {
+    return (
+        <div className="employment">
+            <section className="headerText">
+                <h1>My Employment History</h1>
+                <p>All employment experience are listed in chronological order.</p>
+                <hr></hr>
+            </section>
+            <section className="timeline">
+                <VerticalTimeline>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="July 2022 - May 2024"
+                        dateClassName="empDate"
+                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    >
+                        <h3 className="vertical-timeline-element-title"><b>Singapore Civil Defence Force</b></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><b>Assistant Medical Trainer</b></h4>
+                        <h5 className="vertical-timeline-element-subtitle"><b>Singapore</b></h5>
+                        <p>Job Responsibilities:</p>
+                        <ul>
+                            <li>Assisted in conducting medical lessons and proficiency certification tests to force personnel and civilians nationwide. </li>
+                            <li>Administrated manual data entry and verification of medical certification test results using <b>Microsoft Excel. </b></li>
+                            <li>Organized various internal events within the force and facilitated inter-unit logistical communications among force personnel.</li>
+                            <ul>
+                                <li>
+                                    Singapore Firefighters & Paramedics Challenge 2023
+                                </li>
+                            </ul>
+                        </ul>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="April 2019 - April 2022"
+                        dateClassName='empDate'
+                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    >
+                        <h3 className="vertical-timeline-element-title"><b>X0PA.Ai</b></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><b>Full Stack Engineer Intern</b></h4>
+                        <h5 className="vertical-timeline-element-subtitle"><b>Singapore</b></h5>
+                        <p>Job Responsibilities: </p>
+                        <ul>
+                            <li>Regulated full-stack maintenance and development of various software as a service (SaaS) products for various clients across Singapore (mySkillsFuture, Republic Polytechnic). </li>
+                            <li>Utilized full-stack web technologies such as <b>React.js, PostgreSQL and Node.js,</b> alongside version control tools, such as <b>Git</b> and <b>Jira</b>, within an AGILE software development life-cycle.</li>
+                            <li>Actively contributed to team development meetings by providing status reports on client tickets, application functionality and user interface.</li>
+                        </ul>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
+            </section>
+        </div>
+    )
 }
- 
+
 export default Employment;

@@ -1,0 +1,219 @@
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #212121;
+    border: 2px solid #313131;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    margin: 0 auto;
+}
+
+.modal-90w {
+    max-width: 95% !important;
+    max-height: 100vh !important;
+}
+
+.modal-90w .modal-content {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-90w .modal-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.btn-close-modal {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border: none;
+    background: #0084ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 100%;
+}
+
+.project-image-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.project-image:hover {
+    box-shadow: 0 0 4px #A6A6A6, 0 0 8px #A6A6A6, 0 0 16px #A6A6A6;
+}
+
+.content .card-title {
+    margin: 0;
+    width: 100%;
+}
+
+.content .card-title h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.content .card-title h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.content .para {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.4;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.content .para ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.content .para li {
+    margin-bottom: 0.4rem;
+}
+
+.content .btn-skills {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+    padding: 6px 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border: none;
+    background: #0084ff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.content .btn-repo {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border: none;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.content .btn-website {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border: none;
+    background: #0d9b43;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.btn-website:hover {
+    box-shadow: 0 0 4px #0d9b43, 0 0 8px #0d9b43, 0 0 8px #0d9b43;
+}
+
+.btn-repo:hover {
+    box-shadow: 0 0 4px #A6A6A6, 0 0 8px #A6A6A6, 0 0 8px #A6A6A6;
+}
+
+.captions {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
+.slideshowImage {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+/* Container for proper spacing on 768px screens */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* Skills row optimization for 768px */
+.card .content .row {
+    margin: 0 -2px;
+}
+
+.card .content .row .col {
+    padding: 0 2px;
+    margin-bottom: 4px;
+}
+
+/* Modal header adjustments for tablet */
+.modal-90w .modal-header {
+    padding: 12px 16px;
+}
+
+.modal-90w .modal-header h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.modal-90w .modal-footer {
+    padding: 12px 16px;
+}

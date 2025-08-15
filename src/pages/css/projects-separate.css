@@ -1,0 +1,155 @@
+.project-card-container {
+    padding: 10rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* Large Desktop */
+@media only screen and (max-width: 1200px) {
+    .project-card-container {
+        padding: 8rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .project-card-container {
+        padding: 6rem 4rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Mobile Landscape */
+@media only screen and (max-width: 768px) {
+    .project-card-container {
+        padding: 4rem 2rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) {
+    .project-card-container {
+        padding: 2rem 1rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Very Small Screens */
+@media only screen and (max-width: 320px) {
+    .project-card-container {
+        padding: 1rem 0.5rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Additional responsive styles for the overall container */
+.project-container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Ensure Bootstrap Row doesn't cause horizontal overflow */
+@media only screen and (max-width: 768px) {
+    .project-card-container .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .project-card-container .row {
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .project-card-container .row.g-5 {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project-card-container .row.g-5 {
+        --bs-gutter-x: 0.5rem;
+        --bs-gutter-y: 1rem;
+    }
+}
+
+/* Header section responsive adjustments */
+.headerText {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: white;
+}
+
+.headerText h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', serif;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 1rem;
+}
+
+.headerText p {
+    font-size: 1.5rem;
+    font-family: 'Outfit', serif;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 2rem;
+}
+
+.headerText hr {
+    border-top: 2px solid white;
+    opacity: 1.0;
+    text-shadow: 1px 1px 10px black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header responsive styles */
+@media only screen and (max-width: 768px) {
+    .headerText {
+        padding: 2rem 1.5rem;
+    }
+
+    .headerText h1 {
+        font-size: 2.5rem;
+    }
+
+    .headerText p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headerText {
+        padding: 1.5rem 1rem;
+    }
+
+    .headerText h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .headerText p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .headerText hr {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .headerText {
+        padding: 1rem 0.5rem;
+    }
+
+    .headerText h1 {
+        font-size: 1.8rem;
+    }
+
+    .headerText p {
+        font-size: 1rem;
+    }
+}

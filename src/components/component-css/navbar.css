@@ -1,0 +1,97 @@
+.navBar {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0) !important;
+    justify-content: center !important;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+/* Main Logo */
+.text-Main {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    font-family: "Rock Salt", cursive;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 400;
+    touch-action: manipulation;
+    text-shadow: 1px 5px 12px black;
+    margin-bottom: 0.5rem;
+}
+
+.text-Main:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #0dffcb, 0 0 20px #0dffcb, 0 0 30px #0dffcb, 0 0 40px #0dffcb;
+}
+
+/* Other links */
+.text-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    font-family: 'Outfit', serif;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 0.75rem;
+    font-weight: 500;
+    touch-action: manipulation;
+    text-shadow: 1px 5px 12px black;
+}
+
+.text-link:hover {
+    transform: scale(1.07);
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #0dffcb, 0 0 20px #0dffcb, 0 0 30px #0dffcb, 0 0 40px #0dffcb;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    .text-Main {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .text-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem 0;
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    .text-link:hover {
+        transform: scale(1.03); /* Reduced scale for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-Main {
+        font-size: 1.5rem;
+    }
+    
+    .text-link {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
+    .text-Main {
+        font-size: 1.3rem;
+    }
+    
+    .text-link {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

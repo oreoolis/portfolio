@@ -1,0 +1,84 @@
+.footer{
+    color: whitesmoke;
+}
+
+.footerText{
+    padding: 15px;
+    text-align: center;
+    font-family: 'Outfit', serif;
+}
+
+.footerText h1{
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', serif;
+}
+
+.footerText i{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* Footer Mobile Responsive Styles */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 15px;
+        background-size: cover;
+    }
+
+    .footerText {
+        padding: 12px;
+    }
+
+    .footerText h1 {
+        font-size: 1.2rem;
+    }
+
+    .footerText i {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 15px 10px;
+        background-size: cover;
+    }
+
+    .footerText {
+        padding: 10px;
+    }
+
+    .footerText h1 {
+        font-size: 1rem;
+    }
+
+    .footerText i {
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+}
+
+/* For extra small mobile devices */
+@media screen and (max-width: 320px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footerText {
+        padding: 8px;
+    }
+
+    .footerText h1 {
+        font-size: 0.9rem;
+    }
+
+    .footerText i {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+}

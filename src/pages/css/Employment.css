@@ -1,0 +1,27 @@
+.empDate {
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .empDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .empDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .empDate {
+        color: rgb(0, 0, 0);
+        font-family: 'Outfit', serif;
+    }
+
+}
