@@ -13,6 +13,10 @@
     border-radius: 20px;
 }
 
+.course-image:hover{
+    cursor: pointer;
+}
+
 .course-title{
     font-family: 'Outfit', sans-serif;
 }

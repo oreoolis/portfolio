@@ -35,7 +35,7 @@ const Employment = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
-                        date="April 2019 - April 2022"
+                        date="September 2021 - February 2022"
                         dateClassName='empDate'
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                     >
