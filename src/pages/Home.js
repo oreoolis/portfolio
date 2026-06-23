@@ -13,7 +13,7 @@ import RouteCards from '../components/routeCards.js';
 
 
 // words array for flipping
-const words = ["HTML", "CSS", "Python", "PHP", "React.JS", "Angular", "Google Firebase", "AWS", "MongoDB"];
+const words = ["Python", "PHP", "Java", "SpringBoot", "React.JS", "Supabase", "Amazon Web Services", "Vue.JS"];
 
 
 const Home = () => {
@@ -43,9 +43,9 @@ const Home = () => {
                                 <h1><strong>HELLO!</strong></h1>
                                 <h3><strong>I am Dwayne Arnold Otero.</strong></h3>
                                 <br></br>
-                                <h4>A 2nd year B(Sc) Software Engineering student at Singapore Management University.</h4>
+                                <h4>A 3rd year B(Sc) Software Engineering student at Singapore Management University.</h4>
                                 <h4>Formerly from Temasek Polytechnic's Diploma in Information Techology.</h4>
-                                <h4>My passion lies in creating full stack web applications and front-end development!</h4>
+                                <h4>My passion lies in creating scalable and resilient full stack web applications that enhances user experience and productivity!</h4>
                             </div>
                         </Col>
                         <Col xs={12} lg={4} className="d-flex justify-content-center align-items-center">
@@ -65,7 +65,7 @@ const Home = () => {
                 <h1><strong>My Skills.</strong></h1>
                 <h3>
                     <strong>
-                        <a className="resumeURL" href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/Dwayne_Resume.pdf">
+                        <a className="resumeURL" href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/DwayneOtero_Resume_Mar26.pdf">
                             Click here to view my full resume!
                         </a>
                     </strong>

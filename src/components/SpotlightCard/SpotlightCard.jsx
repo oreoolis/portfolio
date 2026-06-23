@@ -25,12 +25,7 @@ const SpotlightCard = ({ className = "", spotlightColor = "rgba(255, 255, 255, 0
   return (
     <>
       {header.map((label, index) => {
-        let lgVal = 0;
-        if (index === 0) {
-          lgVal = 7;
-        } else {
-          lgVal = 5;
-        };
+        const lgVal = index === 0 ? 7 : 5;
         return (
           <Col xs={12} lg={lgVal}>
             <div
@@ -55,6 +50,5 @@ const SpotlightCard = ({ className = "", spotlightColor = "rgba(255, 255, 255, 0
 };
 
 export default SpotlightCard;
-
 
 

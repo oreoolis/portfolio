@@ -6,26 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-const personalProjectsItems = [
-    {
-        title: "HAWKR Restaurant Website",
-        subheading: "E-Commerce/Marketing",
-        image: [
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/images/clientProjects/hawkrMenuApp/hawkrImg1.png",
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/images/clientProjects/hawkrMenuApp/hawkrImg2.png",
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/images/clientProjects/hawkrMenuApp/hawkrImg3.png",
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/images/clientProjects/hawkrMenuApp/hawkrImg4.png"
-        ],
-        desc: [
-            "A website that aims to increase customer engagement of my cousin's Philippine-based restaurant by providing essential details. ",
-            "Users are able to view the menu, contact the restaurant and view business goals and achievements in a centralized location."
-        ],
-        skills: ["React.JS", "AWS S3"],
-        rep: "https://github.com/oreoolis/HAWKR-Menu",
-        website: "https://hawkr-menu.vercel.app"
-    }
-];
+import { personalProjectsItems } from './project-repository/personal-projects-repository';
 
 function VerticallyCenteredModal({ item, ...props }) {
     return (
@@ -61,6 +42,7 @@ function VerticallyCenteredModal({ item, ...props }) {
 
 const ProjectItem = ({ item, index }) => {
     const [modalShow, setModalShow] = useState(false);
+    const projectImage = item.image && item.image[0];
     const viewRepo = () => {
         window.open(item.rep, "_blank")
     }
@@ -69,12 +51,27 @@ const ProjectItem = ({ item, index }) => {
             <div className="card">
                 <div className="content">
                     <div className="project-image-container">
-                        <img
-                            className="project-image"
-                            src={item.image[0]}
-                            alt="project-image"
-                            onClick={() => setModalShow(true)}
-                        />
+                        {projectImage ? (
+                            <img
+                                className="project-image"
+                                src={projectImage}
+                                alt=""
+                                aria-hidden="true"
+                                onClick={() => setModalShow(true)}
+                            />
+                        ) : (
+                            <div className="project-image-placeholder" aria-hidden="true">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M14.002 3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-12 1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm8.5 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M3 11l2.5-3 1.75 2.25 2.5-3.25L13 11z" />
+                                </svg>
+                            </div>
+                        )}
                     </div>
                     <VerticallyCenteredModal
                         item={item}
