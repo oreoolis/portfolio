@@ -5,22 +5,8 @@ import './css/Courses.css';
 
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
+import { courseDetails } from '../components/project-repository/course-repository';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-const courseDetails = [
-    // course data hierarchy (chronological order)
-    {
-        title: "SCDF-Dell Lifesavers’ Innovation Challenge 2025",
-        img: [
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/SCDFHackathon/1.jpg",
-            "https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/SCDFHackathon/2.jpg"
-        ]
-    },
-    {
-        title: "Global Startup Hackathon Challenge 2021",
-        img: ["https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/GEIP.png"]
-    }
-]
 
 const Courses = () => {
 
@@ -52,7 +38,7 @@ const Courses = () => {
                             <img
                                 className="course-image"
                                 src={courseDetails[0].img[0]}
-                                alt="project-image"
+                                alt="SCDF-Dell Lifesavers' Innovation Challenge 2025 screenshot"
                                 onClick={handleShow}
                             />
                             <Modal
@@ -84,12 +70,12 @@ const Courses = () => {
                         <p>Proposed an application and business system to allow Singaporean civilians to learn first-aid and apply their skills in real situations.</p>
                         <ul>
                             <li>
-                                <a href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/SCDFHackathon/CODEREDY_SCDF+Competition.pdf"  target="_blank"><b>
+                                <a href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/SCDFHackathon/CODEREDY_SCDF+Competition.pdf" target="_blank" rel="noreferrer"><b>
                                     Research and Development Document
                                 </b></a>
                             </li>
                             <li>
-                                <a href="https://www.figma.com/design/OWsX7x37rRJtumgC3WtXj2/Untitled?node-id=0-1&t=WH8aIT5hkuEcntPo-1"  target="_blank"><b>
+                                <a href="https://www.figma.com/design/OWsX7x37rRJtumgC3WtXj2/Untitled?node-id=0-1&t=WH8aIT5hkuEcntPo-1" target="_blank" rel="noreferrer"><b>
                                     Figma Mockup Prototype
                                 </b></a>
                             </li>
@@ -110,13 +96,13 @@ const Courses = () => {
                             <img
                                 className="course-image"
                                 src={courseDetails[1].img[0]}
-                                alt="project-image"
+                                alt="Global Startup Hackathon Challenge 2021 screenshot"
                             />
                         </div>
                         <br></br>
                         <ul>
-                            <li><b><a href="https://www.credential.net/f9799c14-4e32-4045-afd3-13d44cba5855" target="_blank" >Certificate of Completion</a></b></li>
-                            <li><b><a href="https://docs.google.com/presentation/d/1FVPySaJlVgMsnfK3hPkPKQUq01tlbF9Wpal0aErMxXs/edit?usp=sharing" target="_blank">Presentation Pitch Deck</a></b></li>
+                            <li><b><a href="https://www.credential.net/f9799c14-4e32-4045-afd3-13d44cba5855" target="_blank" rel="noreferrer">Certificate of Completion</a></b></li>
+                            <li><b><a href="https://docs.google.com/presentation/d/1FVPySaJlVgMsnfK3hPkPKQUq01tlbF9Wpal0aErMxXs/edit?usp=sharing" target="_blank" rel="noreferrer">Presentation Pitch Deck</a></b></li>
                         </ul>
                         <p>Collaborated with Ngee Ann Polytechnic students to pitch a collective travel saving application targeted for youths and millenials.</p>
                         <p><b>Learning Outcomes:</b></p>

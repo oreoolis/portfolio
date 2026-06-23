@@ -10,7 +10,7 @@ import Employment from './pages/employment';
 import Education from './pages/education';
 import SchoolProjects from './pages/school-projects';
 import PersonalProjects from './pages/personal-projects';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Routes, Route, useLocation } from 'react-router-dom';
 
 import NavBar from './components/navbar';
 import Footer from './components/footer';
