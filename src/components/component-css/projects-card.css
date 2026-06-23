@@ -59,11 +59,11 @@
 }
 
 .project-image-container {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    object-fit: fill;
-
+    min-height: 160px;
 }
 
 .project-image {
@@ -74,6 +74,22 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.4s;
+}
+
+.project-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 160px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.project-image-placeholder svg {
+    display: block;
 }
 
 .project-image:hover {
@@ -112,6 +128,7 @@
 
 .content .para li {
     margin-bottom: 0.4rem;
+    font-size: 1rem;
 }
 
 .content .btn-skills {
