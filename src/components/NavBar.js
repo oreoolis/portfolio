@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import './component-css/navbar.css';
 
-function NavBar() {
+function CustomNavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark" className="navBar">
       <Container >
@@ -43,4 +43,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default CustomNavBar;
