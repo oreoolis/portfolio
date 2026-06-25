@@ -12,7 +12,7 @@ import SchoolProjects from './pages/school-projects';
 import PersonalProjects from './pages/personal-projects';
 import { BrowserRouter as Routes, Route, useLocation } from 'react-router-dom';
 
-import NavBar from './components/navbar';
+import CustomNavBar from './components/navbar';
 import Footer from './components/footer';
 import Aurora from './components/aurora';
 
@@ -55,7 +55,7 @@ function PageWrapper({ children }) {
 function App() {
   return (
     <div>
-      <NavBar />
+      <CustomNavBar />
       <Aurora >
         colorStops={["#FFFFFF", "#00FFAA", "#00EEFF"]}
         speed={0.5}
