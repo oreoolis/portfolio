@@ -12,7 +12,7 @@ import SchoolProjects from './pages/school-projects';
 import PersonalProjects from './pages/personal-projects';
 import { BrowserRouter as Routes, Route, useLocation } from 'react-router-dom';
 
-import CustomNavBar from './components/navbar';
+import CustomNavBar from './components/NavBar';
 import Footer from './components/footer';
 import Aurora from './components/aurora';
 
