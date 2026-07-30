@@ -65,7 +65,7 @@ const Home = () => {
                 <h1><strong>My Skills.</strong></h1>
                 <h3>
                     <strong>
-                        <a className="resumeURL" href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/DwayneOtero_Resume_Mar26.pdf">
+                        <a className="resumeURL" href="https://reactportfolio-bucket.s3.ap-southeast-1.amazonaws.com/documents/DwayneOtero_Resume_Jul26.pdf">
                             Click here to view my full resume!
                         </a>
                     </strong>
