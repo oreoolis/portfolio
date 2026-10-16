@@ -1,4 +1,4 @@
-# Dwayne Otero — Portfolio
+# My Portfolio!
 
 Single-page portfolio for Dwayne Otero, Software Engineering student at Singapore Management University. It covers education, work experience, skills, projects, and awards and certifications.
 
